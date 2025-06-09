@@ -15,13 +15,13 @@ st.title("🏡 Prediksi Harga Properti")
 st.write("Aplikasi cerdas untuk memprediksi harga properti berdasarkan fitur yang Anda input.")
 
 # Input pengguna
-luas_bangunan = st.number_input("Luas Bangunan (GrLivArea)", min_value=10, step=1)
-luas_tanah = st.number_input("Luas Tanah (LotArea)", min_value=10, step=1)
-kamar_tidur = st.number_input("Jumlah Kamar Tidur (BedroomAbvGr)", min_value=1, step=1)
-tahun_dibangun = st.number_input("Tahun Dibangun (YearBuilt)", min_value=1800, max_value=2100, step=1)
-kualitas = st.slider("Kualitas Bangunan (OverallQual)", 1, 10, 5)
-garasi = st.slider("Jumlah Mobil di Garasi (GarageCars)", 0, 5, 2)
-kamar_mandi = st.slider("Jumlah Kamar Mandi (FullBath)", 0, 4, 1)
+luas_bangunan = st.number_input("Luas Bangunan", min_value=10, step=1)
+luas_tanah = st.number_input("Luas Tanah", min_value=10, step=1)
+kamar_tidur = st.number_input("Jumlah Kamar Tidur", min_value=1, step=1)
+tahun_dibangun = st.number_input("Tahun Dibangun", min_value=1800, max_value=2100, step=1)
+kualitas = st.slider("Kualitas Bangunan", 1, 10, 5)
+garasi = st.slider("Jumlah Mobil di Garasi", 0, 10, 2)
+kamar_mandi = st.slider("Jumlah Kamar Mandi", 0, 8, 1)
 
 # Lokasi properti dengan nama-nama provinsi
 provinsi_labels = label_encoders['Provinsi'].classes_.tolist()
